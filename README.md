@@ -42,3 +42,4 @@ Display the result.
 ![alt text](image.png)
 
 ## RESULT:
+Thus python program for reading content from a CSV file is successful.
