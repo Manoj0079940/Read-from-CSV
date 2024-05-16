@@ -5,15 +5,15 @@ To write a python program for reading content from a csv file
 
 ## ALGORITHM:
 ### Step 1:
-Import pandas as pd
+Load the CSV into a DataFrame.
 ### Step 2:
-Read the CSV file using read_csv method
+Print the number of contents to be displayed using df.head().
 ### Step 3:
-Use head and tail method to get the required contents from the file.
+The number of rows returned is defined in Pandas option settings.
 ### Step 4:
-Use len()method to get the number of rows and columns
+Check your system's maximum column with the pd.options.display.max_column statement.
 ### Step 5:
-Display the result.
+Increase the maximum number of rows to display the entire DataFrame.
 
 ## PROGRAM:
 ```
@@ -21,21 +21,13 @@ Read-from-CSV
 AIM:
 To write a python program for reading content from a csv file
 
-ALGORITHM:
-Step 1:
-Import pandas as pd
+import pandas as pd
+df = pd.read_csv('salary.csv')
+print(df.head(10))
+print(df.tail())
+print("Number of rows:",len(df.axes[0]))
+print("Number of columns:",len(df.axes[1]))
 
-Step 2:
-Read the CSV file using read_csv method
-
-Step 3:
-Use head and tail method to get the required contents from the file.
-
-Step 4:
-Use len()method to get the number of rows and columns
-
-Step 5:
-Display the result.
 ```
 
 ## OUTPUT:
